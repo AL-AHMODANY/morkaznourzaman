@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مركز نور الزمان الاسلامي</title>
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <Link rel="stylesheet" href="/style.css">
+  <script src="script.js" defer></script>
+
+  <link rel="icon" href="images/logo - Copy.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز نور الزمان الاسلامي</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <!-- Brand -->
+      <div class="brand">
+        <img src="/images/logo - Copy.jpg" alt="Madrasah Logo">
+        <div class="names">
+          <span class="arabic-name">مركز نور الزمان الاسلامي</span>
+          <span class="english-name">Markaz Nur Zaman Al-Islamy</span>
+        </div>
+      </div>
+
+      <!-- Hamburger for mobile -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/admissions.html">Admissions</a></li>
+        <li><a href="/programs.html">Programmes</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+      });
+    </script>
+
+
+
+    <!-- END OF NAV BAR -->
+    <!-- HERO SECTION -->
+    <section class="madrasa-hero">
+      <div class="container">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Welcome to <br>MORKAZ NOUR ZAMAN</h1>
+            <p>Empowering the next generation with Qur’anic knowledge,<br> Arabic language, and moral excellence.</p>
+            <div class="hero-buttons">
+              <a href="/admissions.html" class="btn primary-btn">Enroll Now</a>
+              <a href="/about.html" class="btn outline-btn">Learn More</a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="images/madrasah buildings.jpg" alt="Madrasa building">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF HERO SECTION -->
+    <!-- other section  -->
+    <!-- Classes / Programs Section -->
+    <section id="programs" class="programs-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Classes</h2>
+          <p>Providing quality Qur’anic and academic education at every level</p>
+        </div>
+
+        <div class="classes-grid">
+          <!-- Ibtidahiyyah -->
+          <div class="class-card">
+            <img src="images/ibtidahiyyah class.jpg" alt="Ibtidahiyyah Class">
+            <h3>Ibtidahiyyah</h3>
+            <p>Foundational Qur’anic and Arabic studies for young learners, building strong moral and academic skills.
+            </p>
+          </div>
+
+          <!-- Idaadiyah -->
+          <div class="class-card">
+            <img src="images/muslim student studying.jpg" alt="Idaadiyah Class">
+            <h3>Idaadiyah</h3>
+            <p>Intermediate level for students to advance in Qur’anic memorization, Arabic language, and character
+              development.</p>
+          </div>
+
+          <!-- Thsanawiyyah -->
+          <div class="class-card">
+            <img src="images/san.jpg" alt="Thanawiyyah Class">
+            <h3>Thsanawiyyah</h3>
+            <p>Advanced studies preparing students for higher education with deep Qur’anic understanding and academic
+              excellence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Classes / Programs Section -->
+    <!-- Motivation / Vision Section -->
+    <section class="motivation-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Vision & Mission</h2>
+          <p>Inspiring students to excel academically, spiritually, and morally</p>
+        </div>
+
+        <div class="motivation-cards">
+          <div class="motivation-card">
+            <h3>Qur’anic Excellence</h3>
+            <p>Nurturing a deep understanding and love for the Qur’an and its teachings.</p>
+          </div>
+          <div class="motivation-card">
+            <h3>Character Development</h3>
+            <p>Building strong morals, discipline, and leadership qualities in every student.</p>
+          </div>
+          <div class="motivation-card">
+            <h3>Academic Growth</h3>
+            <p>Providing knowledge and skills that prepare students for success in the modern world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Motivation / Vision Section -->
+    <!-- Admissions / Call-to-Action Section -->
+    <section class="admissions-section">
+      <div class="container">
+        <div class="admissions-content">
+          <h2>Admissions Open | القبول مفتوح</h2>
+          <p>
+            Enroll your child today to provide them with Qur’anic knowledge, Arabic language mastery, and moral
+            excellence. <br>
+            سجّل طفلك اليوم لتزويده بالمعرفة القرآنية وإتقان اللغة العربية والتميز الأخلاقي.
+          </p>
+          <a href="admissions.html" class="btn enroll-btn">Enroll Now | سجّل الآن</a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Admissions / Call-to-Action Section -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+
+          <!-- Column 1: Brand -->
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img src="/images/logo - Copy.jpg" alt="Logo">
+              <div class="names">
+                <h3 class="arabic-name">مركز نور الزمان الاسلامي</h3>
+                <p class="english-name">Markaz Nur Zaman Al-Islamy</p>
+              </div>
+            </div>
+
+            <p class="footer-desc">
+              A center of Qur’an memorization, Arabic learning,
+              Islamic morals and academic excellence for all ages.
+            </p>
+          </div>
+
+          <!-- Column 2: Important Links -->
+          <div class="footer-col">
+            <h4>Important Links</h4>
+            <ul>
+              <li><a href="/modrasah.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="/admissions.html">Admissions</a></li>
+              <li><a href="programs.html">Programmes</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Programmes -->
+          <div class="footer-col">
+            <h4>Our Programmes</h4>
+            <ul>
+              <li>Qur’an Memorization</li>
+              <li>Arabic Language</li>
+              <li>Islamic Studies</li>
+              <li>Weekend School</li>
+              <li>Youth Islamic Class</li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact -->
+          <div class="footer-col">
+            <div class="foot">
+              <h4>Contact Us</h4>
+              <p><i class="bi bi-geo-alt-fill"></i> Al-bayyan Nur & Pry School</p>
+              <p><i class="bi bi-telephone-fill"></i> +234 812 911 7778</p>
+              <p><i class="bi bi-globe"></i> morkaznourazzaman@gmail.com</p>
+              <p><i class="bi bi-stopwatch-fill"></i> Mon–Sat: 8AM–6PM</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- WhatsApp ONLY -->
+        <div class="footer-whatsapp">
+          <a href="https://wa.me/2348129117778" target="_blank" class="wa-fixed">
+            <img src="images/whatsapp.jpeg" alt="WhatsApp">
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 Markaz Nur Zaman Al-Islamy
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+  </html>

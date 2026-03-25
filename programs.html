@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مركز نور الزمان الاسلامي</title>
+  <LInk rel="stylesheet" href="programs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="script.js" defer></script>
+
+  <link rel="icon" href="images/logo - Copy.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <!-- NAV BAR -->
+
+  <!-- NAV BAR -->
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز نور الزمان الاسلامي</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <!-- Brand -->
+      <div class="brand">
+        <img src="/images/logo - Copy.jpg" alt="Madrasah Logo">
+        <div class="names">
+          <span class="arabic-name">مركز نور الزمان الاسلامي</span>
+          <span class="english-name">Markaz Nur Zaman Al-Islamy</span>
+        </div>
+      </div>
+
+      <!-- Hamburger for mobile -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/admissions.html">Admissions</a></li>
+        <li><a href="/programs.html">Programmes</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+      });
+    </script>
+
+
+    <!-- END OF NAV BAR -->
+    <!-- first section -->
+    <!-- HERO SECTION -->
+    <section class="programs-hero">
+      <div class="hero-overlay">
+        <h1>Our Programs</h1>
+        <h2 class="arabic">البرامج التعليمية</h2>
+        <p>Excellence in Qur’an, Arabic, and Islamic education for every stage of learning.</p>
+        <a href="admissions.html" class="hero-btn">Enroll Now</a>
+      </div>
+    </section>
+
+    <!-- IBTIDAHIYYAH SECTION -->
+    <section class="program-section">
+      <div class="section-header">
+        <h2>Ibtidahiyyah | ابتدائية</h2>
+        <p>Foundational level focusing on basic Qur’anic reading, Arabic letters, and Islamic manners.</p>
+      </div>
+      <div class="program-cards">
+        <div class="card">
+          <img src="/images/muslim student studying.jpg" alt="Qur’an Reading">
+          <div class="card-text">
+            <h3>Qur’an Reading | تلاوة القرآن</h3>
+            <p>Basic Qur’anic reading and Tajweed introduction for young learners.</p>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+        <div class="card reverse">
+          <img src="/images/arabic letters.jpg" alt="Arabic Letters">
+          <div class="card-text">
+            <h3>Arabic Letters | الحروف العربية</h3>
+            <p>Learn to read and write Arabic letters accurately and confidently.</p>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDAADIAH SECTION -->
+    <section class="program-section alternate">
+      <div class="section-header">
+        <h2>Idaadiyah | إعدادية</h2>
+        <p>Intermediate level building Qur’an recitation, Arabic grammar, and stronger Islamic knowledge.</p>
+      </div>
+      <div class="program-cards">
+        <div class="card">
+          <img src="/images/Arabic Grammar.jpg" alt="Arabic Grammar">
+          <div class="card-text">
+            <h3>Arabic Grammar | قواعد اللغة العربية</h3>
+            <p>Develop a solid understanding of Arabic grammar and sentence structure.</p>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+        <div class="card reverse">
+          <img src="/images/sanawi class.jpg" alt="Qur’an Tajweed">
+          <div class="card-text">
+            <h3>Qur’an Tajweed | التجويد</h3>
+            <p>Strengthen recitation skills and correct pronunciation of Qur’anic verses.</p>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THSANAWIYYAH SECTION -->
+    <section class="program-section">
+      <div class="section-header">
+        <h2>Thsanawiyyah | ثانوية</h2>
+        <p>Advanced level for Hifz, Arabic fluency, tafsir, and deeper Islamic studies.</p>
+      </div>
+      <div class="program-cards">
+        <div class="card">
+          <img src="images/san.jpg" alt="Hifz Program">
+          <div class="card-text">
+            <h3>Hifz Program | برنامج الحفظ</h3>
+            <p>Memorization of the Qur’an with tafsir and understanding of meanings.</p>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+        <div class="card reverse">
+          <img src="images/thanawiyyah.jpg" alt="Advanced Studies">
+          <div class="card-text">
+            <h3>Advanced Studies | الدراسات المتقدمة</h3>
+            <p>Arabic literature, tafsir, fiqh, and deep Islamic knowledge for advanced learners.</p>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+
+      <div class="footer-container">
+
+        <!-- Column 1: Brand -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="/images/logo - Copy.jpg" alt="Logo">
+            <div class="names">
+              <h3 class="arabic-name">مركز نور الزمان الاسلامي</h3>
+              <p class="english-name">Markaz Nur Zaman Al-Islamy</p>
+            </div>
+          </div>
+
+          <p class="footer-desc">
+            A center of Qur’an memorization, Arabic learning,
+            Islamic morals and academic excellence for all ages.
+          </p>
+        </div>
+
+        <!-- Column 2: Important Links -->
+        <div class="footer-col">
+          <h4>Important Links</h4>
+          <ul>
+            <li><a href="/modrasah.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="/admissions.html">Admissions</a></li>
+            <li><a href="programs.html">Programmes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Programmes -->
+        <div class="footer-col">
+          <h4>Our Programmes</h4>
+          <ul>
+            <li>Qur’an Memorization</li>
+            <li>Arabic Language</li>
+            <li>Islamic Studies</li>
+            <li>Weekend School</li>
+            <li>Youth Islamic Class</li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <div class="foot">
+            <h4>Contact Us</h4>
+            <p><i class="bi bi-geo-alt-fill"></i> Al-bayyan Nur & Pry School</p>
+            <p><i class="bi bi-telephone-fill"></i> +234 812 911 7778</p>
+            <p><i class="bi bi-globe"></i> morkaznourazzaman@gmail.com</p>
+            <p><i class="bi bi-stopwatch-fill"></i> Mon–Sat: 8AM–6PM</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- WhatsApp ONLY -->
+      <div class="footer-whatsapp">
+        <a href="https://wa.me/2348129117778" target="_blank" class="wa-fixed">
+          <img src="images/whatsapp.jpeg" alt="WhatsApp">
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Markaz Nur Zaman Al-Islamy
+      </div>
+
+    </footer>
+    </footer>
+  </body>
+
+  </html>

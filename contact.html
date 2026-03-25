@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مركز نور الزمان الاسلامي</title>
+  <LInk rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="script.js" defer></script>
+
+  <link rel="icon" href="images/logo - Copy.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <!-- NAV BAR -->
+
+  <nav class="navbar">
+    <!-- Brand -->
+    <div class="brand">
+      <img src="/images/logo - Copy.jpg" alt="Madrasah Logo">
+      <div class="names">
+        <span class="arabic-name">مركز نور الزمان الاسلامي</span>
+        <span class="english-name">Markaz Nur Zaman Al-Islamy</span>
+      </div>
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/admissions.html">Admissions</a></li>
+      <li><a href="/programs.html">Programmes</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+
+  <!-- END OF NAV BAR -->
+
+
+
+  <section class="normal-contact">
+    <h1>Contact Us</h1>
+    <p class="contact-sub">Feel free to reach out to us anytime.</p>
+
+    <div class="contact-box">
+      <form onsubmit="sendToWhatsApp(event)" class="contact-form">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" rows="5" placeholder="Message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+      <script>
+        function sendToWhatsApp(event) {
+          event.preventDefault();
+
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let subject = document.getElementById("subject").value;
+          let message = document.getElementById("message").value;
+
+          let phone = "2348129117778";  // <-- put YOUR number here
+
+          let url =
+            "https://wa.me/" +
+            phone +
+            "?text=" +
+            "📩 *New Message From Website*" +
+            "%0A%0A" +
+            "*Name:* " + name + "%0A" +
+            "*Email:* " + email + "%0A" +
+            "*Subject:* " + subject + "%0A" +
+            "*Message:* " + message;
+
+          window.open(url, "_blank");
+        }
+      </script>
+
+
+      <div class="contact-info">
+        <h3>Our Contact Info</h3>
+        <p><strong>Phone:</strong> +234 812 911 7778</p>
+        <p><strong>Email:</strong> morkaznourazzaman@gmail.com</p>
+        <p><strong>Address:</strong> Imodi-Imosan, Nigeria</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- Column 1: Brand -->
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="/images/logo - Copy.jpg" alt="Logo">
+          <div class="names">
+            <h3 class="arabic-name">مركز نور الزمان الاسلامي</h3>
+            <p class="english-name">Markaz Nur Zaman Al-Islamy</p>
+          </div>
+        </div>
+
+        <p class="footer-desc">
+          A center of Qur’an memorization, Arabic learning,
+          Islamic morals and academic excellence for all ages.
+        </p>
+      </div>
+
+      <!-- Column 2: Important Links -->
+      <div class="footer-col">
+        <h4>Important Links</h4>
+        <ul>
+          <li><a href="/modrasah.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="/admissions.html">Admissions</a></li>
+          <li><a href="programs.html">Programmes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Programmes -->
+      <div class="footer-col">
+        <h4>Our Programmes</h4>
+        <ul>
+          <li>Qur’an Memorization</li>
+          <li>Arabic Language</li>
+          <li>Islamic Studies</li>
+          <li>Weekend School</li>
+          <li>Youth Islamic Class</li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact -->
+      <div class="footer-col">
+        <div class="foot">
+          <h4>Contact Us</h4>
+          <p><i class="bi bi-geo-alt-fill"></i> Al-bayyan Nur & Pry School</p>
+          <p><i class="bi bi-telephone-fill"></i> +234 812 911 7778</p>
+          <p><i class="bi bi-globe"></i> morkaznourazzaman@gmail.com</p>
+          <p><i class="bi bi-stopwatch-fill"></i> Mon–Sat: 8AM–6PM</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WhatsApp ONLY -->
+    <div class="footer-whatsapp">
+      <a href="https://wa.me/2348129117778" target="_blank" class="wa-fixed">
+        <img src="images/whatsapp.jpeg" alt="WhatsApp">
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Markaz Nur Zaman Al-Islamy
+    </div>
+
+  </footer>
+</body>
+
+</html>
